@@ -11,14 +11,14 @@ export default function GamesHub() {
       link: "/unscramble",
     },
     {
-      title: "Math Quiz (Coming Soon)",
-      description: "Test your math skills in this fast-paced quiz game.",
+      title: "Matching Game",
+      description: "Flip cards and find pairs in this memory challenge.",
       image: placeholderImage,
-      link: "#",
+      link: "/matching", // <-- now links to MatchingGame
     },
     {
-      title: "Memory Match (Coming Soon)",
-      description: "Flip cards and find pairs in this memory challenge.",
+      title: "Math Quiz (Coming Soon)",
+      description: "Test your math skills in this fast-paced quiz game.",
       image: placeholderImage,
       link: "#",
     },

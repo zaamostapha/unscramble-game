@@ -1,6 +1,7 @@
 // src/App.tsx
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import GamesHub from "./GamesHub";
+import MatchingGame from "./MatchingGame";
 import UnscrambleGame from "./UnscrambleGame";
 
 export default function App() {
@@ -10,18 +11,15 @@ export default function App() {
         {/* Navbar */}
         <header className="bg-white shadow">
           <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+            {/* Website Name */}
             <Link to="/" className="text-2xl font-bold text-indigo-600">
               EduGames 🎮
             </Link>
-            <nav className="space-x-6">
+
+            {/* Only Home button */}
+            <nav>
               <Link to="/" className="text-gray-600 hover:text-indigo-600">
                 Home
-              </Link>
-              <Link
-                to="/unscramble"
-                className="text-gray-600 hover:text-indigo-600"
-              >
-                Unscramble
               </Link>
             </nav>
           </div>
@@ -32,6 +30,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<GamesHub />} />
             <Route path="/unscramble" element={<UnscrambleGame />} />
+            <Route path="/matching" element={<MatchingGame />} />
           </Routes>
         </main>
 
